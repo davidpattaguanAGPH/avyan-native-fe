@@ -2,7 +2,10 @@ import React, { useState } from "react";
 
 import { useRoutes } from "react-router-dom";
 import LandingPage from "./pages/home/landingpage/LandingPage";
+import LoginPage from "./pages/authentication/login/LoginPage";
+import HeroVideo from "./pages/home/hero-video/HeroVideo";
 import PrivateRoute from "./routes/PrivateRoute";
+import TestResults from "./pages/test-results/TestResults";
 
 const App = () => {
   const [user, setUser] = useState({
@@ -18,11 +21,19 @@ const App = () => {
     },
     {
       path: "/login",
-      element: <>Login Page</>,
+      element: <LoginPage />,
     },
     {
       path: "/register",
       element: <>Registration Page</>,
+    },
+    {
+      path: "/hero-video",
+      element: <HeroVideo />,
+    },
+    {
+      path: "/test-results",
+      element: <TestResults />,
     },
     {
       path: "dashboard",

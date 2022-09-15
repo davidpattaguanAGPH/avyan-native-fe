@@ -1,3 +1,16 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+//AIA EVEREST FONTS
+
+//400 – Normal.
+
+@layer base {
+}
+
+@font-face {
+  font-family: "aiaregular";
+  src: url("./assets/fonts/AIAEverest-Regular.otf");
+  font-weight: 400;
+}

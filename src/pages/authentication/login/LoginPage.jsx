@@ -1,13 +1,17 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const LoginPage = () => {
   return (
     <>
-      <div class="bg-black py-6 sm:py-8 lg:py-12 h-full">
+      <div class="bg-black py-6 sm:py-8 lg:py-12 h-screen">
         <div class="max-w-screen-2xl px-4 md:px-8 mx-auto">
           <form class="max-w-lg border p-7 rounded-lg mx-auto bg-white">
+            <div className="flex justify-end">
+              <Link to="/">X</Link>
+            </div>
             <div>
-              <h1 className="text-center text-3xl font-medium px-10 py-5">
+              <h1 className="text-center text-3xl font-medium px-10 py-3">
                 Create your free account or log in
               </h1>
             </div>

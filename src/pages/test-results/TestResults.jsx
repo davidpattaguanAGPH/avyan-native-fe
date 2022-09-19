@@ -9,7 +9,7 @@ import PersonalityType from "./personality-type/PersonalityType";
 const TestResults = () => {
   return (
     <>
-      <div className="bg-gray-100 ">
+      <div className="bg-gray-100">
         <NavigationBar />
         <div className="max-w-screen-xl mx-auto">
           <PersonalityType />

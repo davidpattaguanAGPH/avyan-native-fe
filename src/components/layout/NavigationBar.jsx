@@ -7,11 +7,7 @@ const NavigationBar = () => {
       <div class="bg-gray-100 lg:pb-1 ">
         <div class="max-w-screen-2xl px-4 md:px-16 mx-auto shadow-sm">
           <header class="flex justify-between lg:justify-start items-center py-4 md:py-4 ">
-            <a
-              href="/"
-              class="inline-flex items-center text-black-500 text-xl md:text-xl font-bold gap-2.5"
-              aria-label="logo"
-            >
+            <a href="/" aria-label="logo">
               <img src={AIAGroupLogo} alt="" />
             </a>
 
@@ -60,10 +56,7 @@ const NavigationBar = () => {
               </div>
             </div>
 
-            <button
-              type="button"
-              class="inline-flex items-center lg:hidden bg-gray-200 hover:bg-gray-300 focus-visible:ring ring-indigo-300 text-gray-500 active:text-gray-700 text-sm md:text-base font-semibold rounded-lg gap-2 px-2.5 py-2"
-            >
+            <button type="button" class="lg:hidden ">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 class="h-6 w-6"
@@ -76,7 +69,6 @@ const NavigationBar = () => {
                   clip-rule="evenodd"
                 />
               </svg>
-              Menu
             </button>
           </header>
 

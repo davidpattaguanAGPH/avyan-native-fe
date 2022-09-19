@@ -3,34 +3,13 @@ import React from "react";
 const Footer = () => {
   return (
     <div>
-      <footer class="bg-white pt-4 sm:pt-6 lg:pt-8">
-        <div class="max-w-screen-2xl px-4 md:px-8 mx-auto">
-          <div class="flex flex-col md:flex-row justify-between items-center gap-2 border-t border-b py-6">
-            <div class="text-center md:text-left mb-3 md:mb-0">
-              <span class="text-gray-800 font-bold uppercase tracking-widest">
-                Newsletter
-              </span>
-              <p class="text-gray-500">Subscribe to our newsletter</p>
-            </div>
-
-            <form class="w-full md:max-w-md flex gap-2">
-              <input
-                placeholder="Email"
-                class="w-full flex-1 bg-gray-50 text-gray-800 placeholder-gray-500 border focus:ring ring-indigo-300 rounded outline-none transition duration-100 px-3 py-2"
-              />
-
-              <button class="inline-block bg-indigo-500 hover:bg-indigo-600 active:bg-indigo-700 focus-visible:ring ring-indigo-300 text-white text-sm md:text-base font-semibold text-center rounded outline-none transition duration-100 px-8 py-2">
-                Send
-              </button>
-            </form>
-          </div>
-        </div>
-
+      <footer class="bg-gray-100 pt-4 sm:pt-6 lg:pt-8 font-aiaregular">
         <div class="pt-12">
-          <div class="max-w-screen-2xl px-4 md:px-8 mx-auto">
-            <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-12 lg:gap-8 mb-16">
+          <div class="max-w-screen-2xl mx-5 md:px-16 ">
+            <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5  mb-16">
               <div class="col-span-full lg:col-span-2">
                 <div class="lg:-mt-2 mb-4">
+                  <img src="" alt="" />
                   <a
                     href="/"
                     class="inline-flex items-center text-black-800 text-xl md:text-2xl font-bold gap-2"
@@ -117,52 +96,8 @@ const Footer = () => {
               </div>
 
               <div>
-                <div class="text-gray-800 font-bold tracking-widest uppercase mb-4">
-                  Products
-                </div>
-
-                <nav class="flex flex-col gap-4">
-                  <div>
-                    <a
-                      href="#"
-                      class="text-gray-500 hover:text-indigo-500 active:text-indigo-600 transition duration-100"
-                    >
-                      Overview
-                    </a>
-                  </div>
-
-                  <div>
-                    <a
-                      href="#"
-                      class="text-gray-500 hover:text-indigo-500 active:text-indigo-600 transition duration-100"
-                    >
-                      Solutions
-                    </a>
-                  </div>
-
-                  <div>
-                    <a
-                      href="#"
-                      class="text-gray-500 hover:text-indigo-500 active:text-indigo-600 transition duration-100"
-                    >
-                      Pricing
-                    </a>
-                  </div>
-
-                  <div>
-                    <a
-                      href="#"
-                      class="text-gray-500 hover:text-indigo-500 active:text-indigo-600 transition duration-100"
-                    >
-                      Customers
-                    </a>
-                  </div>
-                </nav>
-              </div>
-
-              <div>
-                <div class="text-gray-800 font-bold tracking-widest uppercase mb-4">
-                  Company
+                <div class="text-gray-800 font-bold tracking-widest  mb-4">
+                  Life Paths
                 </div>
 
                 <nav class="flex flex-col gap-4">
@@ -214,9 +149,7 @@ const Footer = () => {
               </div>
 
               <div>
-                <div class="text-gray-800 font-bold tracking-widest uppercase mb-4">
-                  Support
-                </div>
+                <div class="text-gray-800 font-bold mb-4">Support</div>
 
                 <nav class="flex flex-col gap-4">
                   <div>
@@ -258,43 +191,67 @@ const Footer = () => {
               </div>
 
               <div>
-                <div class="text-gray-800 font-bold tracking-widest uppercase mb-4">
-                  Legal
-                </div>
+                <div class="text-gray-800 font-bold mb-4">Follow us on</div>
 
                 <nav class="flex flex-col gap-4">
                   <div>
-                    <a
+                    <div
                       href="#"
                       class="text-gray-500 hover:text-indigo-500 active:text-indigo-600 transition duration-100"
                     >
-                      Terms of Service
-                    </a>
+                      Contact
+                    </div>
                   </div>
 
                   <div>
-                    <a
-                      href="#"
-                      class="text-gray-500 hover:text-indigo-500 active:text-indigo-600 transition duration-100"
-                    >
-                      Privacy Policy
-                    </a>
+                    <div class="text-gray-800 font-bold">
+                      Make your inbox more interesting
+                    </div>
                   </div>
 
                   <div>
-                    <a
-                      href="#"
-                      class="text-gray-500 hover:text-indigo-500 active:text-indigo-600 transition duration-100"
-                    >
-                      Cookie settings
-                    </a>
+                    <form>
+                      <div class="flex">
+                        <label
+                          for="search-dropdown"
+                          class="mb-2 text-sm font-medium text-gray-900 sr-only dark:text-gray-300"
+                        >
+                          Your Email
+                        </label>
+
+                        <div class="relative w-full">
+                          <input
+                            type="search"
+                            id="search-dropdown"
+                            class="block p-2.5 w-full z-20 text-sm text-gray-900 bg-gray-50 rounded-lg  border-l-2 border "
+                            placeholder="Email Address"
+                          />
+                          <button
+                            type="submit"
+                            class="absolute top-0 right-0 p-2.5 text-sm font-medium text-white bg-primary-red rounded-r-lg border "
+                          >
+                            Submit
+                          </button>
+                        </div>
+                      </div>
+                    </form>
                   </div>
                 </nav>
               </div>
             </div>
 
-            <div class="text-gray-400 text-sm text-center border-t py-8">
-              © 2021 - Present Flowrift. All rights reserved.
+            <div class="text-gray-400 text-sm flex justify-between border-t py-8">
+              <div>
+                Copyright © 2022, AIA Group Limited and its subsidiaries. All
+                rights reserved.
+              </div>
+              <div>
+                <nav className="flex gap-5">
+                  <div>Terms of Use</div>
+                  <div>Privacy Policy</div>
+                  <div>Terms and Condition</div>
+                </nav>
+              </div>
             </div>
           </div>
         </div>

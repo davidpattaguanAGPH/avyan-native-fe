@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import "./styles.css";
 import playVideo from "../../../assets/img/Vector-2.png";
 import AIALogoWhite from "../../../assets/img/newlogo 1.png";
+import Button from "../../../components/common/button/Button";
 
 const LandingPage = () => {
   return (
@@ -30,12 +31,7 @@ const LandingPage = () => {
                 become a better version of yourself.
               </p>
               <div class="flex  items-center sm:flex-row sm:justify-center lg:justify-start gap-2.5">
-                <a
-                  href="#"
-                  class="inline-block bg-white hover:bg-white hover:text-black  focus-visible:ring ring-indigo-300 text-black text-xs md:text-base font-semibold text-center rounded-lg outline-none transition duration-100 px-8 py-3  font-aiaregular"
-                >
-                  Unlock the Better You
-                </a>
+                <Button type="primary">Unlock the better you</Button>
 
                 <Link
                   to="/hero-video"

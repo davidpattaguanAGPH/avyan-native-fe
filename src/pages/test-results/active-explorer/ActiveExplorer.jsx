@@ -1,11 +1,11 @@
 import React from "react";
-import PsychometricCard from "./PsychoMetricCard.jsx/PsychometricCard";
+import ActiveExplorerList from "./active-explorer-list/ActiveExplorerList";
 
-const PsychometricTraits = () => {
+const ActiveExplorer = () => {
   return (
-    <>
+    <div>
       <div className=" rounded-lg mb-5 w-full font-aiaregular">
-        <h1 className="font-semibold text-3xl mb-2 ">Psychometric Traits</h1>
+        <h1 className="font-semibold text-3xl mb-2">For an active explorer</h1>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vitae, mauris
           in consequat sit sed viverra a varius. Diam amet mattis justo, et
@@ -13,15 +13,11 @@ const PsychometricTraits = () => {
           morbi orci.
         </p>
       </div>
-      <div className="mb-10">
-        <PsychometricCard />
-        <PsychometricCard />
-        <PsychometricCard />
-        <PsychometricCard />
-        <PsychometricCard />
+      <div className="w-full">
+        <ActiveExplorerList />
       </div>
-    </>
+    </div>
   );
 };
 
-export default PsychometricTraits;
+export default ActiveExplorer;

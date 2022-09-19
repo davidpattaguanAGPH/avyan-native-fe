@@ -6,6 +6,8 @@ import LoginPage from "./pages/authentication/login/LoginPage";
 import HeroVideo from "./pages/home/hero-video/HeroVideo";
 import PrivateRoute from "./routes/PrivateRoute";
 import TestResults from "./pages/test-results/TestResults";
+import Dashboard from "./pages/dashboard/Dashboard";
+import ProfileCreate from "./pages/profile-create/ProfileCreate";
 
 const App = () => {
   const [user, setUser] = useState({
@@ -28,6 +30,14 @@ const App = () => {
       element: <>Registration Page</>,
     },
     {
+      path: "/create-profile",
+      element: (
+        <>
+          <ProfileCreate />
+        </>
+      ),
+    },
+    {
       path: "/hero-video",
       element: <HeroVideo />,
     },
@@ -46,7 +56,7 @@ const App = () => {
             user.roles.includes("admin")
           }
         >
-          TESTING
+          <Dashboard />
         </PrivateRoute>
       ),
     },

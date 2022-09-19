@@ -66,5 +66,4 @@ module.exports = {
       },
     },
   },
-  plugins: [],
 };

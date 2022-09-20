@@ -3,7 +3,7 @@ import ExploreResultListItem from "./explore-result-listitem/ExploreResultListIt
 
 const ExploreListResult = () => {
   return (
-    <div className="bg-white md:px-16 md:py-5 rounded-sm mb-10">
+    <div className="bg-white md:px-16 md:py-5 rounded-sm mb-16">
       <ExploreResultListItem />
       <ExploreResultListItem />
       <ExploreResultListItem />

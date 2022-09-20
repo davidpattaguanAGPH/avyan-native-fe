@@ -4,7 +4,7 @@ import FosterStrengthCard from "./FosterStrengthItem/FosterStrengthCard";
 import "@splidejs/react-splide/css";
 const FosterStrengthList = () => {
   return (
-    <div className="mb-10">
+    <div className="mb-10 mt-5">
       <Splide
         options={{
           rewind: true,
@@ -13,19 +13,19 @@ const FosterStrengthList = () => {
           perPage: 3,
           perMove: 1,
           padding: "2rem",
-          gap: 20,
+          gap: 10,
           breakpoints: {
-            640: {
+            400: {
               perPage: 1,
             },
-            768: {
-              perPage: 2,
+            800: {
+              perPage: 1,
             },
             1024: {
-              perPage: 3,
+              perPage: 2,
             },
             1440: {
-              perPage: 5,
+              perPage: 3,
             },
           },
         }}

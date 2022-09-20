@@ -12,8 +12,11 @@ const HeroVideo = () => {
   return (
     <div className="h-screen bg-black flex justify-center  flex-col">
       <div className="flex justify-end mr-5 mb-5">
-        <div className="text-white text-2xl" onClick={onClickExit}>
-          <AiFillCloseCircle />
+        <div
+          className="text-white text-2xl cursor-pointer"
+          onClick={onClickExit}
+        >
+          <AiFillCloseCircle size={30} />
         </div>
       </div>
 

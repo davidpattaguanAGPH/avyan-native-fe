@@ -4,6 +4,9 @@ module.exports = {
   theme: {
     fontFamily: {
       aiaregular: ["aiaregular", "sans-serif"],
+      aiaregularit: ["aiaregularit", "sans-serif"],
+      aiamedium: ["aiamedium", "sans-serif"],
+      aiabold: ["aiabold", "sans-serif"],
     },
     extend: {
       colors: {

@@ -55,7 +55,7 @@ const DashboardHero = () => {
       </div>
       <div class="max-w-screen-lg px-4 md:px-8 mx-auto">
         <section class="flex flex-col lg:flex-row justify-between gap-6 sm:gap-10 md:gap-16 ">
-          <div class="xl:w-5/12 flex flex-col justify-center sm:text-center lg:text-left lg:py-12 xl:py-24">
+          <div class="xl:w-5/12 flex flex-col justify-center sm:text-center lg:text-left lg:py-12 xl:py-36">
             <h1 class="text-black-800 text-3xl sm:text-5xl md:text-6xl font-bold mb-8 md:mb-5">
               Financial Readiness Test
             </h1>

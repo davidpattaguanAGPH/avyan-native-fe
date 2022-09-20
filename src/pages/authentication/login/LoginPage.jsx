@@ -1,23 +1,27 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import closeicon from "../../../assets/svg/close-icon.svg";
 
 const LoginPage = () => {
   return (
     <>
-      <div class="bg-black py-6 sm:py-8 lg:py-12 h-screen">
+      <div class="bg-black py-6 sm:py-8 lg:py-12 h-screen font-aiaregular">
         <div class="max-w-screen-2xl px-4 md:px-8 mx-auto">
-          <form class="max-w-lg border p-7 rounded-lg mx-auto bg-white">
-            <div className="flex justify-end">
-              <Link to="/">X</Link>
+          <form class="max-w-lg border px-10 py-5 mt-16 rounded-lg mx-auto bg-white relative">
+            <div className="flex justify-end absolute right-4 top-3">
+              <Link to="/">
+                <img src={closeicon} alt="" />
+              </Link>
             </div>
+
             <div>
-              <h1 className="text-center text-3xl font-medium px-10 py-3">
-                Create your free account or log in
+              <h1 className="text-center text-3xl pt-9 px-5 lg:px-10 py-3 font-aiamedium ">
+                Create an account or login to see your results
               </h1>
             </div>
 
             <div class="flex flex-col gap-4 p-4 md:p-8">
-              <button class="flex justify-center items-center bg-blue-500 hover:bg-blue-600 active:bg-blue-700 focus-visible:ring ring-blue-300 text-white text-sm md:text-base font-semibold text-center rounded-lg outline-none transition duration-100 gap-2 px-8 py-3">
+              <button class="flex justify-center items-center bg-blue-500 hover:bg-blue-600 active:bg-blue-700 focus-visible:ring ring-blue-300 text-white text-sm md:text-base text-center rounded-lg outline-none transition duration-100 gap-2 px-8 py-3">
                 <svg
                   class="w-5 h-5 shrink-0"
                   width="24"
@@ -34,7 +38,7 @@ const LoginPage = () => {
                 Continue with Facebook
               </button>
 
-              <button class="flex justify-center items-center bg-white hover:bg-gray-100 active:bg-gray-200 border border-gray-300 focus-visible:ring ring-gray-300 text-gray-800 text-sm md:text-base font-semibold text-center rounded-lg outline-none transition duration-100 gap-2 px-8 py-3">
+              <button class="flex justify-center items-center bg-white hover:bg-gray-100 active:bg-gray-200 border border-gray-300 focus-visible:ring ring-gray-300 text-gray-800 text-sm md:text-base text-center rounded-lg outline-none transition duration-100 gap-2 px-8 py-3">
                 <svg
                   class="w-5 h-5 shrink-0"
                   width="24"
@@ -64,7 +68,7 @@ const LoginPage = () => {
               </button>
             </div>
 
-            <div class="flex justify-center items-center relative">
+            <div class="flex justify-center items-center relative mx-7">
               <span class="h-px bg-gray-300 absolute inset-x-0"></span>
               <span class="bg-white text-gray-400 text-sm relative px-4">
                 OR
@@ -75,20 +79,25 @@ const LoginPage = () => {
               <div>
                 <label
                   for="email"
-                  class="inline-block text-gray-800 text-sm sm:text-base mb-2"
+                  class="inline-block text-gray-800 text-sm sm:text-xs mb-2"
                 >
-                  Email
+                  Email Address
                 </label>
                 <input
                   name="email"
-                  class="w-full bg-gray-50 text-gray-800 border focus:ring ring-indigo-300 rounded outline-none transition duration-100 px-3 py-2"
+                  placeholder="Johndoe@gmail.com"
+                  class="w-full  text-gray-800 border-b   rounded outline-none transition duration-100 py-2"
                 />
               </div>
 
-              <button class="block bg-red-700 hover:bg-gray-700 active:bg-gray-600 focus-visible:ring ring-gray-300 text-white text-sm md:text-base font-semibold text-center rounded-lg outline-none transition duration-100 px-8 py-3">
-                Log in
-              </button>
-              <p className="text-xs">
+              <Link
+                to="/dashboard"
+                class="block bg-primary-red hover:bg-gray-700 active:bg-gray-600 focus-visible:ring ring-gray-300 text-white text-sm md:text-base font-semibold text-center rounded-md outline-none transition duration-100 px-8 py-3"
+              >
+                Continue
+              </Link>
+
+              <p className=" text-center text-sm ">
                 By continuing, you agree to the <b>Terms of Service </b> and
                 acknowledge our <b>Privacy Policy</b>.
               </p>

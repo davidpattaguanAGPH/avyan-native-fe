@@ -3,31 +3,32 @@ import { Disclosure } from "@headlessui/react";
 
 const PsychometricCard = () => {
   return (
-    <div className="mb-5 font-aiaregular ">
+    <div className="mb-5 ">
       <Disclosure>
-        <div className=" relative border flex py-9 px-10 md:px-20 rounded-sm flex-col text-center ">
+        <div className=" relative border flex py-9 px-5 md:px-10 lg:px-20 rounded-sm flex-col text-center ">
           <div>
-            <h1 className="font-bold mb-2">Identitfy</h1>
+            <h1 className="mb-2 font-aiamedium text-lg ">Nature</h1>
           </div>
-          <div>
-            <h6 className="mb-5">
-              This trait shows where we direct our mental energy
+          <div className=" ">
+            <h6 className=" text-sm  mb-5">
+              This trait underpins others, showing how confident we are in our
+              abilities and decisions.
             </h6>
           </div>
           <div className="w-full flex items-center">
             <div className="flex flex-col text-left">
-              <div className="text-4xl font-bold ">61%</div>
-              <div>Intuitive</div>
+              <div className="text-lg font-aiamedium lg:text-4xl">61%</div>
+              <div className="text-sm">Intuitive</div>
             </div>
-            <div class="w-full bg-gray-200 rounded-full h-2.5 dark:bg-gray-700 mx-5">
+            <div class="flex w-full justify-end bg-gray-200 rounded-full h-2.5 dark:bg-gray-700 mx-2">
               <div
-                class="bg-blue-600 h-2.5 rounded-full"
-                style={{ width: "45%" }}
+                class="bg-blue-600 h-2.5 rounded-full "
+                style={{ width: "50%" }}
               ></div>
             </div>
             <div className="flex flex-col text-right">
-              <div className="text-4xl ">61%</div>
-              <div>Intuitive</div>
+              <div className="text-lg  font-aiamedium lg:text-4xl">61%</div>
+              <div className="text-sm">Intuitive</div>
             </div>
           </div>
           <div className="flex justify-center pt-5">

@@ -3,7 +3,7 @@ import ActiveExplorerList from "./active-explorer-list/ActiveExplorerList";
 
 const ActiveExplorer = () => {
   return (
-    <div>
+    <div className=" mb-10 ">
       <div className=" rounded-lg mb-5 w-full font-aiaregular">
         <h1 className="font-semibold text-3xl mb-2">For an active explorer</h1>
         <p>

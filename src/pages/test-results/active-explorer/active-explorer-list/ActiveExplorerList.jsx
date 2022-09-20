@@ -6,14 +6,14 @@ import ActiveExplorerCard from "./active-explorer-card/ActiveExplorerCard";
 
 const ActiveExplorerList = () => {
   return (
-    <div class="grid overflow-hidden grid-cols-12 grid-rows-2 gap-2">
-      <div className="col-span-8 row-span-2">
+    <div class="grid grid-cols-1 gap-5 lg:overflow-hidden lg:grid-cols-12 lg:grid-rows-2 lg:gap-2">
+      <div className="lg:col-span-8 lg:row-span-2">
         <ArticleCardLg />
       </div>
-      <div className="w-64 col-start-9 col-span-2">
+      <div className="lg:w-64 lg:col-start-9 lg:col-span-2">
         <ArticleCardSm />
       </div>
-      <div className="w-64  col-start-9 col-span-2">
+      <div className="lg:w-64  lg:col-start-9 lg:col-span-2">
         <ArticleCardSm />
       </div>
     </div>

@@ -20,5 +20,19 @@
 @font-face {
   font-family: "aiaregular";
   src: url("./assets/fonts/AIAEverest-Regular.otf");
-  font-weight: 400;
+}
+
+@font-face {
+  font-family: "aiaregularit";
+  src: url("./assets/fonts/AIAEverest-RegularItalic.otf");
+}
+
+@font-face {
+  font-family: "aiamedium";
+  src: url("./assets/fonts/AIAEverest-Medium.otf");
+}
+
+@font-face {
+  font-family: "aiabold";
+  src: url("./assets/fonts/AIAEverest-Bold.otf");
 }

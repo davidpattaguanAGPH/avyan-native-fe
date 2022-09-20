@@ -8,9 +8,12 @@ import ExploreSideBar from "./explore-sidebar/ExploreSideBar";
 const ExploreResult = () => {
   return (
     <div className="max-w-screen-xl mx-auto">
-      <div class="grid grid-cols-1 md:grid-cols-4 gap-3">
-        <ExploreSideBar />
-        <div className="md:col-span-3 mx-5">
+      <div class="grid grid-cols-12 gap-3">
+        <div className="col-span-12 sm:col-span-4 lg:col-span-3">
+          <ExploreSideBar />
+        </div>
+
+        <div className="col-span-12 sm:col-span-8 lg:col-span-9 px-5  w-full mx-auto">
           <ExploreListResult />
           <PsychometricTraits />
           <ActiveExplorer />

@@ -1,9 +1,11 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import "./styles.css";
+
 import playVideo from "../../../assets/img/Vector-2.png";
-import AIALogoWhite from "../../../assets/img/newlogo 1.png";
 import Button from "../../../components/common/button/Button";
+import AIALogoWhite from "../../../assets/img/newlogo 1.png";
+
+import "./styles.css";
 
 const LandingPage = () => {
   return (
@@ -14,34 +16,41 @@ const LandingPage = () => {
           type="video/mp4"
         />
       </video>
-      <div class=" pb-6 pt-9 sm:pb-8 lg:pb-12 lg:pt-9">
-        <div class="max-w-screen-2xl px-9 md:px-32 mx-auto">
-          <section class="flex flex-col lg:flex-row justify-between gap-6 sm:gap-10 md:gap-16">
-            <div class="xl:w-6/12 flex flex-col sm:text-center lg:text-left xl:px-3">
+      <div className="pt-16">
+        <div className="max-w-screen-2xl px-9 md:px-32 mx-auto">
+          <section className="flex flex-col lg:flex-row justify-between gap-6 sm:gap-10 md:gap-16">
+            <div className="xl:w-6/12 flex flex-col lg:text-left xl:px-3">
               <img
-                className="object-scale-down h-10 w-10 mb-24"
+                className="object-scale-down h-10 w-10 mb-20 md:mb-12  xl:mb-24"
                 src={AIALogoWhite}
               ></img>
-              <h1 class="text-white text-6xl sm:text-5xl md:text-7xl mb-5 md:mb-8 tracking-wide font-aiaregular">
+              <h1 className="text-white text-5xl sm:text-6xl md:text-7xl mb-5 md:mb-8 tracking-wide xl:mt-16 font-aiaregular">
                 A life well-lived starts with you
               </h1>
-              <p class="lg:w-11/12 text-white xl:text-lg leading-relaxed mb-8 md:mb-5 text-left font-aiaregular font-thin">
+              <p className="lg:w-11/12 text-white xl:text-lg  mb-8 text-left font-aiaregular ">
                 Unlock a better you. We want to help you live a life well-lived.
                 By taking the test, you'll unlock parts of you that can help you
                 become a better version of yourself.
               </p>
-              <div class="flex  items-center sm:flex-row sm:justify-center lg:justify-start gap-2.5">
-                <Button type="primary">Unlock the better you</Button>
+              <div className="flex  items-center  sm:flex-row  lg:justify-start gap-2.5">
+                <Link to="/test">
+                  <Button
+                    type="primary"
+                    className="font-aiaregular font-normal"
+                  >
+                    Unlock the better you
+                  </Button>
+                </Link>
 
                 <Link
                   to="/hero-video"
-                  class="inline-block  focus-visible:ring ring-indigo-300 text-white active:text-gray-700 text-sm md:text-base font-semibold text-center rounded-lg outline-none transition duration-100 px-8 py-3 flex justify-evenly items-center gap-3"
+                  className=" focus-visible:ring ring-indigo-300 text-white active:text-gray-700 text-sm md:text-base rounded-lg outline-none transition duration-100 px-8 py-3 flex justify-evenly items-center gap-3"
                 >
                   <img src={playVideo} alt="" /> Play Video
                 </Link>
               </div>
-              <div class="flex flex-col sm:flex-row sm:justify-center lg:justify-start gap-2.5 pt-5 xl:text-lg">
-                <p className="text-white xl:text-lg font-light font-aiaregular">
+              <div className="flex flex-col sm:flex-row  lg:justify-start gap-2.5 pt-5 xl:text-lg">
+                <p className="text-white xl:text-lg ">
                   Already taken the test?{" "}
                   <Link to="login" className="text-white underline">
                     Login

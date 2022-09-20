@@ -7,7 +7,7 @@ const PersonalityType = () => {
       <div class=" mt-10">
         <div class="max-w-screen-xl px-4 md:px-8 mx-auto">
           <section class="flex flex-col lg:flex-row justify-between gap-6 sm:gap-10 md:gap-16">
-            <div class="xl:w-7/12 lg:h-auto  rounded-lg">
+            <div class="md:w-full lg:h-auto text-center">
               <img
                 src={PTACTIVE}
                 loading="lazy"
@@ -15,7 +15,7 @@ const PersonalityType = () => {
                 class=" object-center"
               />
             </div>
-            <div class="xl:w-5/12 flex flex-col justify-center sm:text-center lg:text-left lg:py-6 xl:py-6">
+            <div class="md:w-full  flex flex-col justify-center sm:text-center lg:text-left lg:py-6 xl:py-6">
               <p class=" md:text-lg xl:text-md font-regular  mb-4 md:mb-3 text-primary-black">
                 Your personality Type is
               </p>
@@ -24,13 +24,13 @@ const PersonalityType = () => {
                 The Active
               </h1>
 
-              <p class="lg:w-4/5 text-primary-black xl:text-md leading-relaxed mb-8 md:mb-5">
+              <p class="lg:w-8/12 text-primary-black xl:text-md leading-relaxed mb-8 md:mb-5 text-justify">
                 For the current you, life is all about exploring the wonders of
                 parenthood. You love the moments you share with budding family
                 and can’t wait to discover more together. You’re someone who’s
                 imaginative and always on-the-go.
               </p>
-              <p class="lg:w-4/5 text-primary-black xl:text-md leading-relaxed mb-8 md:mb-12">
+              <p class="lg:w-8/12 text-primary-black xl:text-md leading-relaxed mb-8 md:mb-12 text-justify">
                 People close to you will never see you sitting still and just
                 waiting for things to happen. You’re likely to invite people out
                 at 3am for an early breakfast or book flights whenever there’s a

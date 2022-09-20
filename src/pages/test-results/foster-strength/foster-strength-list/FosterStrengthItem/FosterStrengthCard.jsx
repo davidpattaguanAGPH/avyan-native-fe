@@ -3,9 +3,9 @@ import React from "react";
 const FosterStrengthCard = () => {
   return (
     <div className="relative">
-      <div className="absolute z-10 top-48 md:top-20 left-1/2 -translate-x-1/2 -translate-y-1/2">
+      <div className="absolute z-10 top-14 md:top-20 left-1/2 -translate-x-1/2 -translate-y-1/2">
         <svg
-          width="80"
+          width="85"
           height="112"
           viewBox="0 0 112 112"
           fill="none"
@@ -29,24 +29,24 @@ const FosterStrengthCard = () => {
       <div class="flex flex-col bg-transparent  overflow-hidden font-aiaregular ">
         <div
           href="#"
-          class="group h-48 md:h-16 block bg-transparent overflow-hidden relative"
+          class="group h-10  md:h-16 block bg-transparent overflow-hidden relative"
         ></div>
         <div
           href="#"
-          class="group h-28 md:h-20 block bg-primary-black rounded-tl-lg rounded-tr-lg      overflow-hidden relative"
+          class="group h-20 md:h-20 block bg-primary-black rounded-tl-lg rounded-tr-lg      overflow-hidden relative"
         ></div>
 
         <div class="flex flex-col flex-1 p-4 sm:p-6 bg-orange-100">
-          <h2 class="text-gray-800 text-lg font-semibold mb-2">
+          <h2 class="text-gray-800 text-lg  mb-2">
             <a
               href="#"
-              class="hover:text-indigo-500 active:text-indigo-600 transition duration-100"
+              class="hover:text-indigo-500 active:text-indigo-600 transition duration-100 font-aiamedium text-2xl"
             >
               Healthier you
             </a>
           </h2>
 
-          <p class="text-gray-500 mb-5 text-sm">
+          <p class="text-primary-black mb-5 text-sm">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vitae,
             mauris in consequat sit sed viverra a varius. Diam amet mattis
             justo, et aenean felis quis. In lorem at phasellus morbi ut senectus
@@ -56,9 +56,9 @@ const FosterStrengthCard = () => {
           <div class="flex justify-between items-end mt-auto">
             <a
               href="#"
-              class="w-full items-center py-2 px-3 text-sm font-medium text-center rounded-md text-white bg-primary-red"
+              class="w-full items-center py-3 px-3 text-sm font-medium text-center rounded-md text-white bg-primary-red"
             >
-              Read more
+              Get Started
             </a>
           </div>
         </div>

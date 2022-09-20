@@ -5,7 +5,7 @@ const ExploreSideBar = () => {
     <div className="font-aiaregular">
       <div class="overflow-y-auto px-5">
         <p className="p-2 ml-3 text-lg font-semibold">Explore your Result</p>
-        <ul class="space-y-2">
+        <ul class="space-y-2 mb-5">
           <li>
             <a
               href="#"
@@ -71,8 +71,8 @@ const ExploreSideBar = () => {
             </a>
           </li>
         </ul>
-        <div className="bg-white flex  justify-center flex-col items-center p-5 rounded-sm">
-          <h6 className="font-semibold w-32 text-center mb-2">
+        <div className="bg-white flex w-auto  justify-center flex-col items-center p-5 rounded-sm">
+          <h6 className="font-semibold w-32 text-center mb-5">
             How accurate is your result?
           </h6>
           <div class="flex items-center">

@@ -1,29 +1,127 @@
 import React from "react";
+import AiaRed from "../../assets/img/AIA_Group_logo 1.png";
 
 const Footer = () => {
   return (
     <div>
-      <footer class="bg-gray-100 pt-4 sm:pt-6 lg:pt-8 font-aiaregular">
+      <footer class="bg-gray-100 pt-4 sm:pt-6 lg:pt-8 ">
         <div class="pt-12">
-          <div class="max-w-screen-2xl mx-5 md:px-16 ">
+          <div class="max-w-screen-2xl px-5  md:px-16 mx-auto">
             <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5  mb-16">
               <div class="col-span-full lg:col-span-2">
                 <div class="lg:-mt-2 mb-4">
-                  <img src="" alt="" />
+                  <img src={AiaRed} alt="" />
                   <a
                     href="/"
-                    class="inline-flex items-center text-black-800 text-xl md:text-2xl font-bold gap-2"
+                    class="inline-flex items-center  text-xl md:text-xl font-bold gap-2 mt-4 font-aiaregular"
                     aria-label="logo"
                   >
                     AIA Philippines Head Office
                   </a>
                 </div>
 
-                <p class="text-gray-500 sm:pr-8 mb-6">
+                <p class="text-primary-black sm:pr-8 mb-6 w-8/12">
                   16F-18F Six/NEO Building 5th Avenue corner 26th Street
                   Bonifacio Global City, Taguig, Metro Manila, Philippines 1634
                 </p>
+              </div>
 
+              <div>
+                <div class="text-gray-800 font-aiamedium text-2xl mb-4">
+                  Topics
+                </div>
+
+                <nav class="flex flex-col gap-4 font-aiaregular">
+                  <div>
+                    <a
+                      href="#"
+                      class="text-gray-500 hover:text-indigo-500 active:text-indigo-600 transition duration-100"
+                    >
+                      Healthier You
+                    </a>
+                  </div>
+
+                  <div>
+                    <a
+                      href="#"
+                      class="text-gray-500 hover:text-indigo-500 active:text-indigo-600 transition duration-100"
+                    >
+                      Responsible You
+                    </a>
+                  </div>
+
+                  <div>
+                    <a
+                      href="#"
+                      class="text-gray-500 hover:text-indigo-500 active:text-indigo-600 transition duration-100"
+                    >
+                      Smarter You
+                    </a>
+                  </div>
+
+                  <div>
+                    <a
+                      href="#"
+                      class="text-gray-500 hover:text-indigo-500 active:text-indigo-600 transition duration-100"
+                    >
+                      Balanced You
+                    </a>
+                  </div>
+                </nav>
+              </div>
+
+              <div>
+                <div class="text-gray-800 text-2xl  font-aiamedium text-xl mb-4">
+                  Support
+                </div>
+
+                <nav class="flex flex-col gap-4 font-aiaregular">
+                  <div>
+                    <a
+                      href="#"
+                      class="text-gray-500 hover:text-indigo-500 active:text-indigo-600 transition duration-100"
+                    >
+                      About
+                    </a>
+                  </div>
+                  <div>
+                    <a
+                      href="#"
+                      class="text-gray-500 hover:text-indigo-500 active:text-indigo-600 transition duration-100"
+                    >
+                      Contact Us
+                    </a>
+                  </div>
+                  <div>
+                    <a
+                      href="#"
+                      class="text-gray-500 hover:text-indigo-500 active:text-indigo-600 transition duration-100"
+                    >
+                      Our Products
+                    </a>
+                  </div>
+                  <div className="w-30">
+                    <a
+                      href="#"
+                      class="text-gray-500 hover:text-indigo-500 active:text-indigo-600 transition duration-100 "
+                    >
+                      Financial Preparedness Calculator
+                    </a>
+                  </div>
+                  <div>
+                    <a
+                      href="#"
+                      class="text-gray-500 hover:text-indigo-500 active:text-indigo-600 transition duration-100"
+                    >
+                      Personality Test
+                    </a>
+                  </div>
+                  '
+                </nav>
+              </div>
+
+              <div>
+                <div class="text-gray-800 font-bold mb-4">Follow us on</div>
                 <div class="flex gap-4">
                   <a
                     href="#"
@@ -93,116 +191,8 @@ const Footer = () => {
                     </svg>
                   </a>
                 </div>
-              </div>
 
-              <div>
-                <div class="text-gray-800 font-bold tracking-widest  mb-4">
-                  Life Paths
-                </div>
-
-                <nav class="flex flex-col gap-4">
-                  <div>
-                    <a
-                      href="#"
-                      class="text-gray-500 hover:text-indigo-500 active:text-indigo-600 transition duration-100"
-                    >
-                      About
-                    </a>
-                  </div>
-
-                  <div>
-                    <a
-                      href="#"
-                      class="text-gray-500 hover:text-indigo-500 active:text-indigo-600 transition duration-100"
-                    >
-                      Investor Relations
-                    </a>
-                  </div>
-
-                  <div>
-                    <a
-                      href="#"
-                      class="text-gray-500 hover:text-indigo-500 active:text-indigo-600 transition duration-100"
-                    >
-                      Jobs
-                    </a>
-                  </div>
-
-                  <div>
-                    <a
-                      href="#"
-                      class="text-gray-500 hover:text-indigo-500 active:text-indigo-600 transition duration-100"
-                    >
-                      Press
-                    </a>
-                  </div>
-
-                  <div>
-                    <a
-                      href="#"
-                      class="text-gray-500 hover:text-indigo-500 active:text-indigo-600 transition duration-100"
-                    >
-                      Blog
-                    </a>
-                  </div>
-                </nav>
-              </div>
-
-              <div>
-                <div class="text-gray-800 font-bold mb-4">Support</div>
-
-                <nav class="flex flex-col gap-4">
-                  <div>
-                    <a
-                      href="#"
-                      class="text-gray-500 hover:text-indigo-500 active:text-indigo-600 transition duration-100"
-                    >
-                      Contact
-                    </a>
-                  </div>
-
-                  <div>
-                    <a
-                      href="#"
-                      class="text-gray-500 hover:text-indigo-500 active:text-indigo-600 transition duration-100"
-                    >
-                      Documentation
-                    </a>
-                  </div>
-
-                  <div>
-                    <a
-                      href="#"
-                      class="text-gray-500 hover:text-indigo-500 active:text-indigo-600 transition duration-100"
-                    >
-                      Chat
-                    </a>
-                  </div>
-
-                  <div>
-                    <a
-                      href="#"
-                      class="text-gray-500 hover:text-indigo-500 active:text-indigo-600 transition duration-100"
-                    >
-                      FAQ
-                    </a>
-                  </div>
-                </nav>
-              </div>
-
-              <div>
-                <div class="text-gray-800 font-bold mb-4">Follow us on</div>
-
-                <nav class="flex flex-col gap-4">
-                  <div>
-                    <div
-                      href="#"
-                      class="text-gray-500 hover:text-indigo-500 active:text-indigo-600 transition duration-100"
-                    >
-                      Contact
-                    </div>
-                  </div>
-
+                <nav class="flex flex-col gap-4 mt-10">
                   <div>
                     <div class="text-gray-800 font-bold">
                       Make your inbox more interesting

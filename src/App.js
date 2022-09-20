@@ -7,6 +7,7 @@ import HeroVideo from "./pages/home/hero-video/HeroVideo";
 import PrivateRoute from "./routes/PrivateRoute";
 import TestResults from "./pages/test-results/TestResults";
 import Dashboard from "./pages/dashboard/Dashboard";
+import Typeform from "./pages/home/typeform/Typeform";
 
 const App = () => {
   const [user, setUser] = useState({
@@ -32,6 +33,10 @@ const App = () => {
     {
       path: "/hero-video",
       element: <HeroVideo />,
+    },
+    {
+      path: "/test",
+      element: <Typeform />,
     },
     {
       path: "/test-results",

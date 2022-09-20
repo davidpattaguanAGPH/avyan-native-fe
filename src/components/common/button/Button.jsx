@@ -4,11 +4,7 @@ import React from "react";
 
 const ButtonType = {
   primary:
-    "inline-block bg-white hover:bg-white hover:text-black  focus-visible:ring ring-indigo-300 text-black text-xs md:text-base font-semibold text-center rounded-lg outline-none transition duration-100 px-8 py-3  font-aiaregular",
-  secondary:
-    "inline-block bg-primary-red text-white hover:bg-white hover:text-black  focus-visible:ring ring-indigo-300 text-xs md:text-base font-semibold text-center rounded-lg outline-none transition duration-100 px-8 py-3  font-aiaregular",
-  basic: "bg-white hover:bg-gray-700 text-gray-700 font-bold",
-  delete: "bg-red-300 hover:bg-red-500 text-white font-bold",
+    "inline-block bg-white hover:bg-white hover:text-black  focus-visible:ring ring-indigo-300 text-black text-xs md:text-base font-medium text-center rounded-lg outline-none transition duration-100 px-3 sm:px-10 py-3  font-aiaregular",
 };
 
 const ButtonSize = {

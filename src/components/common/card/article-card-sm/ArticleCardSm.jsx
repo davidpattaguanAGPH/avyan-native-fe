@@ -13,7 +13,7 @@ const ArticleCardSm = () => {
       </a>
       <div class="p-3">
         <a href="#">
-          <h5 class="mb-2 text-sm font-bold tracking-tight text-gray-900 ">
+          <h5 class="mb-2 text-sm font-aiamedium tracking-tight text-gray-900 ">
             How Johnson & Johnson Is Shaping the Future of Healthcare Through
             Technology
           </h5>

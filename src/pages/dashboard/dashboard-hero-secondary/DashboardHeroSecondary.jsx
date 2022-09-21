@@ -30,7 +30,7 @@ const DashboardHeroSecondary = () => {
             </div>
             <div className="col-span-3">
               <img
-                className=""
+                className="h-auto w-auto object-contain"
                 src="https://images.unsplash.com/photo-1663174493884-b916b474d78f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
                 alt=""
               />

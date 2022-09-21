@@ -1,6 +1,45 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import closeicon from "../../../assets/svg/close-icon.svg";
+import { refreshTokenSetup } from "../../../features/refreshToken";
+//Google
+import { gapi } from "gapi-script";
+import { GoogleLogin, GoogleLogout } from "react-google-login";
+
+//Facebook
+import FacebookLogin from "react-facebook-login";
+
+const responseFacebook = (response) => {
+  console.log(response);
+};
+const componentClicked = (data) => {
+  console.log(data);
+};
+//end
+
+//Login google
+const clientId =
+  "485178349020-f1k3rj6drln6n6ukdmids5nsv4etjgo6.apps.googleusercontent.com";
+const onSuccess = (res) => {
+  console.log("Login Success: currentUser:", res.profileObj);
+  alert(
+    `Logged in successfully welcome ${res.profileObj.name} 😍. \n See console for full profile object.`
+  );
+  refreshTokenSetup(res);
+};
+const onFailure = (res) => {
+  console.log("Login failed: res:", res);
+  alert(`Failed to login. 😢`);
+};
+
+const initClient = () => {
+  gapi.client.init({
+    clientId: clientId,
+    scope: "",
+  });
+};
+
+gapi.load("client:auth2", initClient);
+//google end
 
 const LoginPage = () => {
   return (
@@ -21,7 +60,26 @@ const LoginPage = () => {
             </div>
 
             <div class="flex flex-col gap-4 p-4 md:p-8">
-              <button class="flex justify-center items-center bg-blue-500 hover:bg-blue-600 active:bg-blue-700 focus-visible:ring ring-blue-300 text-white text-sm md:text-base text-center rounded-lg outline-none transition duration-100 gap-2 px-8 py-3">
+              <FacebookLogin
+                appId="588013729719500"
+                autoLoad={false}
+                fields="name,email,picture"
+                onClick={componentClicked}
+                callback={responseFacebook}
+              />
+
+              <GoogleLogin
+                clientId={clientId}
+                buttonText="Login"
+                onSuccess={onSuccess}
+                onFailure={onFailure}
+                cookiePolicy={"single_host_origin"}
+                style={{ marginTop: "100px" }}
+                isSignedIn={true}
+              />
+              <GoogleLogout clientId={clientId} buttonText="Log out" />
+
+              <button class="flex justify-center items-center bg-blue-500 hover:bg-blue-600 active:bg-blue-700 focus-visible:ring ring-blue-300 text-white text-sm md:text-base font-semibold text-center rounded-lg outline-none transition duration-100 gap-2 px-8 py-3">
                 <svg
                   class="w-5 h-5 shrink-0"
                   width="24"

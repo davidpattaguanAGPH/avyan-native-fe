@@ -21,7 +21,7 @@ const LandingPage = () => {
           <section className="flex flex-col lg:flex-row justify-between gap-6 sm:gap-10 md:gap-16">
             <div className="xl:w-6/12 flex flex-col lg:text-left xl:px-3">
               <img
-                className="object-scale-down h-10 w-10 mb-20 md:mb-12  xl:mb-24"
+                className="object-scale-down h-10 w-10 mb-14 md:mb-12  xl:mb-24"
                 src={AIALogoWhite}
               ></img>
               <h1 className="text-white text-6xl sm:text-6xl md:text-7xl mb-5 md:mb-8 tracking-wide xl:mt-16 font-aiaregular">

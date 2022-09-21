@@ -4,7 +4,7 @@ import React from "react";
 
 const ButtonType = {
   primary:
-    "inline-block bg-white hover:bg-white hover:text-black  focus-visible:ring ring-indigo-300 text-black text-xs md:text-base font-medium text-center rounded-lg outline-none transition duration-100 px-3 sm:px-10 py-3  font-aiaregular",
+    "inline-block bg-white hover:bg-white hover:text-black  focus-visible:ring ring-indigo-300 text-black text-xs md:text-base font-medium text-center rounded-lg outline-none transition duration-100 px-full sm:px-10 py-3  font-aiaregular",
 };
 
 const ButtonSize = {

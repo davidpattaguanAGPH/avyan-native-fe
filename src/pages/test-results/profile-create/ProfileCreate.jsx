@@ -65,6 +65,22 @@ const interests = [
 export default function ProfileCreate({ isModalOpen, setIsModalOpen }) {
   const [list, setList] = useState([]);
   const [isCheck, setIsCheck] = useState([]);
+  const [open, setOpen] = useState(isModalOpen);
+
+  const [count, setCount] = useState(5);
+
+  const cancelButtonRef = useRef(null);
+
+  const [checkedState, setCheckedState] = useState(() =>
+    new Array(interests.length).fill(false)
+  );
+
+  const selectedCount = checkedState.reduce((sum, currentState, index) => {
+    if (currentState === true) {
+      return sum + 1;
+    }
+    return sum;
+  }, 0);
 
   useEffect(() => {
     setOpen(isModalOpen);
@@ -72,17 +88,12 @@ export default function ProfileCreate({ isModalOpen, setIsModalOpen }) {
 
     return () => {
       setIsCheck([]);
-      setCount(5);
+
+      setList([]);
     };
   }, [isModalOpen, list]);
 
-  // useEffect(() => {
-  //   return () => {
-  //     setIsCheck([]);
-  //   };
-  // }, [list]);
-
-  const handleClick = (e) => {
+  const handleClick = (position, e) => {
     const { id, checked } = e.target;
     setIsCheck([...isCheck, id]);
     if (!checked) {
@@ -91,13 +102,15 @@ export default function ProfileCreate({ isModalOpen, setIsModalOpen }) {
     } else {
       setCount(count - 1);
     }
+
+    if (checkedState.filter((i) => i).length >= 5 && e.target.checked) return;
+    const updatedCheckedState = checkedState.map((item, index) =>
+      index === position ? !item : item
+    );
+    setCheckedState(updatedCheckedState);
+
+    console.log(checkedState);
   };
-
-  const [open, setOpen] = useState(isModalOpen);
-
-  const [count, setCount] = useState(5);
-
-  const cancelButtonRef = useRef(null);
 
   console.log(isCheck);
   return (
@@ -140,7 +153,7 @@ export default function ProfileCreate({ isModalOpen, setIsModalOpen }) {
                 </div>
                 <div className="bg-white px-4 pt-5 pb-4 sm:p-6 sm:pb-4">
                   <ul class="grid gap-3 w-full grid-cols-2 md:grid-cols-3  overflow-auto no-scrollbar">
-                    {list.map(({ id, name, imageUrl }) => {
+                    {list.map(({ id, name, imageUrl }, index) => {
                       return (
                         <li className="relative rounded-xl">
                           <input
@@ -151,8 +164,12 @@ export default function ProfileCreate({ isModalOpen, setIsModalOpen }) {
                             class=" peer absolute right-2 top-2 p-10"
                             name={name}
                             required=""
-                            onChange={handleClick}
+                            onChange={(e) => handleClick(index, e)}
                             isChecked={isCheck.includes(id)}
+                            checked={checkedState[index]}
+                            disabled={
+                              !checkedState[index] && selectedCount >= 5
+                            }
                           />
                           <div className="invisible peer-checked:visible text-white z-10 absolute right-2 top-1">
                             X
@@ -160,9 +177,9 @@ export default function ProfileCreate({ isModalOpen, setIsModalOpen }) {
 
                           <label
                             for={name}
-                            class="flex rounded-xl  w-full  bg-white  cursor-pointer   hover:bg-gray-50  peer-checked:brightness-50 brightness-75  peer-checked:border-1 border-black peer-checked:p-1"
+                            class="flex rounded-xl  w-full  bg-white  cursor-pointer peer-disabled:brightness-[0.20]   hover:bg-gray-50  peer-checked:brightness-50 brightness-75  peer-checked:border-1 border-black peer-checked:p-1"
                           >
-                            <div class="group flex rounded-xl  justify-end items-end bg-gray-100 overflow-hidden  shadow-lg relative">
+                            <div class="group flex rounded-xl   justify-end items-end bg-gray-100 overflow-hidden  shadow-lg relative">
                               <img
                                 src={imageUrl}
                                 loading="lazy"

@@ -24,7 +24,7 @@ const LandingPage = () => {
                 className="object-scale-down h-10 w-10 mb-20 md:mb-12  xl:mb-24"
                 src={AIALogoWhite}
               ></img>
-              <h1 className="text-white text-5xl sm:text-6xl md:text-7xl mb-5 md:mb-8 tracking-wide xl:mt-16 font-aiaregular">
+              <h1 className="text-white text-6xl sm:text-6xl md:text-7xl mb-5 md:mb-8 tracking-wide xl:mt-16 font-aiaregular">
                 A life well-lived starts with you
               </h1>
               <p className="lg:w-11/12 text-white xl:text-lg  mb-8 text-left font-aiaregular ">
@@ -32,19 +32,17 @@ const LandingPage = () => {
                 By taking the test, you'll unlock parts of you that can help you
                 become a better version of yourself.
               </p>
-              <div className="flex  items-center  sm:flex-row  lg:justify-start gap-2.5">
-                <Link to="/test">
-                  <Button
-                    type="primary"
-                    className="font-aiaregular font-normal"
-                  >
-                    Unlock the better you
-                  </Button>
+              <div className="flex flex-col  md:items-center  sm:flex-row  lg:justify-start gap-2.5">
+                <Link
+                  to="/hero-video"
+                  className=" focus-visible:ring ring-indigo-300 text-black active:text-gray-700 text-sm md:text-base rounded-lg outline-none transition duration-100 px-8 py-3 flex justify-evenly bg-white  items-center gap-3 font-aiaregular"
+                >
+                  Unlock Better You
                 </Link>
 
                 <Link
                   to="/hero-video"
-                  className=" focus-visible:ring ring-indigo-300 text-white active:text-gray-700 text-sm md:text-base rounded-lg outline-none transition duration-100 px-8 py-3 flex justify-evenly items-center gap-3"
+                  className=" focus-visible:ring ring-indigo-300 text-white active:text-gray-700 text-sm md:text-base rounded-lg outline-none transition duration-100 px-7 py-2 flex justify-center sm:justify-evenly bg-black font-aiaregular  sm:bg-transparent items-center gap-3"
                 >
                   <img src={playVideo} alt="" /> Play Video
                 </Link>

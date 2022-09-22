@@ -2,7 +2,7 @@ import React from "react";
 
 const DashboardHero = () => {
   return (
-    <div class="bg-primary-red pb-6 sm:pb-8 lg:pb-3 font-aiaregular text-white relative">
+    <div class="bg-primary-red pb-6 sm:pb-8 lg:pb-3 font-aiaregular text-white relative mb-10">
       <div className="absolute top-0 left-0">
         <svg
           width="194"
@@ -53,32 +53,32 @@ const DashboardHero = () => {
           </g>
         </svg>
       </div>
-      <div class="max-w-screen-lg px-4 md:px-8 mx-auto">
-        <section class="flex flex-col lg:flex-row justify-between gap-6 sm:gap-10 md:gap-16 ">
-          <div class="xl:w-5/12 flex flex-col justify-center sm:text-center lg:text-left lg:py-12 xl:py-36">
+      <div class="max-w-screen-lg  mx-auto">
+        <section class="flex flex-col lg:flex-row items-center">
+          <div class="xl:w-6/12 flex flex-col justify-center sm:text-center lg:text-left lg:py-12 xl:py-36 px-5">
             <h1 class="text-black-800 text-3xl sm:text-5xl md:text-6xl font-bold mb-8 md:mb-5">
               Financial Readiness Test
             </h1>
-            <p class="lg:w-4/5 leading-relaxed mb-8 md:mb-5 font-light">
+            <p class=" leading-relaxed mb-8 md:mb-5 font-light">
               How ready are you? consectetur adipiscing elit. Faucibus turpis
               suscipit a id interdum turpis.
             </p>
             <div class="flex flex-col sm:flex-row sm:justify-center lg:justify-start gap-2.5">
               <a
                 href="#"
-                class="inline-block bg-primary-white text-black text-sm md:text-base font-semibold text-center rounded-md outline-none transition duration-100 px-12 py-3"
+                class="inline-block bg-primary-white text-black text-sm md:text-base  font-aiamedium text-center rounded-md outline-none transition duration-100 px-12 py-3"
               >
                 Get Started
               </a>
             </div>
           </div>
 
-          <div class="xl:w-5/12 h-48 lg:h-80 bg-gray-100 overflow-hidden shadow-lg rounded-lg mt-10">
+          <div class="h-80 xl:w-6/12  object-contain bg-gray-100 overflow-hidden shadow-lg rounded-lg ">
             <img
-              src="https://images.unsplash.com/photo-1618004912476-29818d81ae2e?auto=format&q=75&fit=crop&w=1000"
+              src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80"
               loading="lazy"
               alt="Photo by Fakurian Design"
-              class="w-full h-full object-cover object-center"
+              class="w-full h-full "
             />
           </div>
         </section>

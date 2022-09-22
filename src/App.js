@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 
 import { useRoutes } from "react-router-dom";
 import LandingPage from "./pages/home/landingpage/LandingPage";
@@ -9,7 +9,14 @@ import TestResults from "./pages/test-results/TestResults";
 import Dashboard from "./pages/dashboard/Dashboard";
 import Typeform from "./pages/home/typeform/Typeform";
 
+import { useLocation } from "react-router-dom";
+
 const App = () => {
+  const location = useLocation();
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [location]);
+
   const [user, setUser] = useState({
     name: "David",
     permissions: ["analyze"],

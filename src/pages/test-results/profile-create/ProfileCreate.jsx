@@ -2,6 +2,7 @@
 import { Fragment, useEffect, useRef, useState } from "react";
 import { Dialog, Transition } from "@headlessui/react";
 import closeicon from "../../../assets/svg/close-icon.svg";
+import closeicontile from "../../../assets/svg/close-profilecardselection.svg";
 import { Link } from "react-router-dom";
 
 const interests = [
@@ -146,13 +147,18 @@ export default function ProfileCreate({ isModalOpen, setIsModalOpen }) {
             >
               <Dialog.Panel className="relative transform overflow-hidden rounded-lg  bg-white text-left shadow-xl transition-all sm:my-8 sm:w-full sm:max-w-xl">
                 <div className="bg-white flex justify-end pr-2 pt-2 ">
-                  <img src={closeicon} alt="" />
+                  <div
+                    className="cursor-pointer"
+                    onClick={() => setIsModalOpen(false)}
+                  >
+                    <img src={closeicon} alt="" />
+                  </div>
                 </div>
                 <div className="bg-white px-4 pt-2 text-2xl text-center font-bold text-black font-aiaregular mb-1">
                   Tell Us What You're Interested In
                 </div>
                 <div className="bg-white px-4 pt-5 pb-4 sm:p-6 sm:pb-4">
-                  <ul class="grid gap-3 w-full grid-cols-2 md:grid-cols-3  overflow-auto no-scrollbar">
+                  <ul class="grid gap-3 w-full h-96 grid-cols-2 md:grid-cols-3  overflow-auto ">
                     {list.map(({ id, name, imageUrl }, index) => {
                       return (
                         <li className="relative rounded-xl">
@@ -171,8 +177,8 @@ export default function ProfileCreate({ isModalOpen, setIsModalOpen }) {
                               !checkedState[index] && selectedCount >= 5
                             }
                           />
-                          <div className="invisible peer-checked:visible text-white z-10 absolute right-2 top-1">
-                            X
+                          <div className="invisible peer-checked:visible text-white z-10 absolute right-2 top-2 bg-black rounded-lg">
+                            <img src={closeicontile} alt="" />
                           </div>
 
                           <label

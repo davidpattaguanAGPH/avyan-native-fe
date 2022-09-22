@@ -3,7 +3,10 @@ import Tags from "../../tags/Tags";
 
 const ArticleCardSm = () => {
   return (
-    <div class=" text-primary-black rounded-md bg-white  ">
+    <div class=" text-primary-black rounded-md bg-white relative ">
+      <div className="absolute bg-black/50 text-white rounded-2xl px-1  top-2 right-3 text-sm">
+        <p className="opacity-100">+ 6 pts</p>
+      </div>
       <a href="#">
         <img
           class="rounded-t-md"
